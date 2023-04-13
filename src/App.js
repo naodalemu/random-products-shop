@@ -35,7 +35,7 @@ class App extends Component {
         {
           key: "3",
           value: "desc",
-          name: "Description",
+          name: "Desc",
         },
       ],
     };
@@ -48,6 +48,10 @@ class App extends Component {
   //     .then((response) => response.json())
   //     .then((users) => this.setState({ monsters: users }));
   // }
+
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
 
   render() {
     const { monsters, searchField } = this.state;
@@ -64,6 +68,7 @@ class App extends Component {
       monster.description.toLowerCase().includes(searchField.toLowerCase())
     );
 
+    // This code was mine to create the option component but chatGPT suggested I use mapping to bind the elements instead of this way so shamefully I did that.
     // const Optionor = (props) => (
     //   <option key={props.key} value={props.value}>
     //     {props.name}
@@ -72,17 +77,20 @@ class App extends Component {
 
     return (
       <div className="App">
-        <SearchBox
-          placeholder="Search for a monster"
-          handleChange={(e) => this.setState({ searchField: e.target.value })}
-        />
-        <Selector
-          optionAttributes={this.state.optionAttributes}
-          searchParameters={this.state.searchParameters}
-          selectorchangeHandeler={(e) =>
-            this.setState({ searchParameters: e.target.value })
-          }
-        />
+        <h1 className="header-name"> Random Products </h1>
+        <div className="searching-components">
+          <SearchBox
+            placeholder="Search for a monster"
+            handleChange={this.handleChange}
+          />
+          <Selector
+            optionAttributes={this.state.optionAttributes}
+            searchParameters={this.state.searchParameters}
+            selectorchangeHandeler={(e) =>
+              this.setState({ searchParameters: e.target.value })
+            }
+          />
+        </div>
         {this.state.searchParameters === "name" ? (
           <CardList monsters={filteredMonstersByName} />
         ) : this.state.searchParameters === "madeIn" ? (
