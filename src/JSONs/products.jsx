@@ -28,7 +28,7 @@ export const products = [
     "price": "5",
     "rent": false,
     "description":
-      "Underpants, I'm selling them while my relationship is going down, what kind a pig I'm I, and why can't you believe me? I said I'd change and trust me I'll."
+      "Underpants, comfortable men and women underwear weither for kids of adults."
   },
   {
     "id": "3",
@@ -39,7 +39,7 @@ export const products = [
     "price": "2",
     "rent": true,
     "description":
-      "Well here are some dolls straight from japan. I'm your boyfriend not your enemy, you're the person whom I love the most, if I can't change this bahri for you then what is love's power? I'm lost. I can't even cry while my parents are home. It's just sad."
+      "Well here are some dolls straight from japan.They're cute but you can really use them for anything you want."
   },
   {
     "id": "4",
