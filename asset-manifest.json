@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/random-products-shop/static/css/main.1e38100f.css",
+    "main.js": "/random-products-shop/static/js/main.00ce5bab.js",
+    "static/js/787.28cb0dcd.chunk.js": "/random-products-shop/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/random-products-shop/index.html",
+    "main.1e38100f.css.map": "/random-products-shop/static/css/main.1e38100f.css.map",
+    "main.00ce5bab.js.map": "/random-products-shop/static/js/main.00ce5bab.js.map",
+    "787.28cb0dcd.chunk.js.map": "/random-products-shop/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e38100f.css",
+    "static/js/main.00ce5bab.js"
+  ]
+}
